@@ -9,12 +9,11 @@ import com.example.employeemanagement.entity.Employee;
 import com.example.employeemanagement.repository.DetailsRepository;
 
 @Component
-public class DetailsServiceImpl implements DetailsService{
+public class DetailsServiceImpl implements DetailsService {
 
 	@Autowired
 	private DetailsRepository detailsRepository;
-	
-	
+
 	@Override
 	public List<Employee> getAllEmployees() {
 		return null;
@@ -25,4 +24,8 @@ public class DetailsServiceImpl implements DetailsService{
 		return detailsRepository.getEmployee(id);
 	}
 
+	@Override
+	public Employee createEmployee(Employee employee) {
+		return detailsRepository.createEmployee(employee);
+	}
 }

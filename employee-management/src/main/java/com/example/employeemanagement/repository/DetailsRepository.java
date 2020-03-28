@@ -18,4 +18,9 @@ public class DetailsRepository {
 	public Employee getEmployee(int id) {
 		return entityManager.find(Employee.class, id);
 	}
+
+	public Employee createEmployee(Employee employee) {
+		entityManager.persist(employee);
+		return employee;
+	}
 }

@@ -8,4 +8,6 @@ public interface DetailsService {
 	List<Employee> getAllEmployees();
 
 	Employee getEmployeeByid(int id);
+
+	Employee createEmployee(Employee employee);
 }
