@@ -18,12 +18,24 @@ public class EmployeeDetailsController {
 	@Autowired
 	private DetailsService detailsService;
 
+	/**
+	 * Fetch a single Employee
+	 * 
+	 * @param id
+	 * @return
+	 */
 	@GetMapping("/details/{id}")
 	public ResponseEntity<Employee> getAllEmployees(@PathVariable("id") int id) {
 		Employee employee = detailsService.getEmployeeByid(id);
 		return new ResponseEntity<Employee>(employee, HttpStatus.OK);
 	}
 
+	/**
+	 * Create an Employee record
+	 * 
+	 * @param employee
+	 * @return
+	 */
 	@PostMapping("/details")
 	public ResponseEntity<Employee> getAllEmployees(@RequestBody Employee employee) {
 		Employee tempEmployee = detailsService.createEmployee(employee);
