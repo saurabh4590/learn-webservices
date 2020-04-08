@@ -24,7 +24,7 @@ public class EmployeeDetailsController {
 	private DetailsService detailsService;
 
 	/**
-	 * Fetch a single Employee
+	 * Fetch a single Employee from the database
 	 * 
 	 * @param id
 	 * @return
