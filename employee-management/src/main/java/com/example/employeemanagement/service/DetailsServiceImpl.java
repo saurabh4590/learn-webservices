@@ -28,4 +28,9 @@ public class DetailsServiceImpl implements DetailsService {
 	public Employee createEmployee(Employee employee) {
 		return detailsRepository.createEmployee(employee);
 	}
+
+	@Override
+	public void deleteById(int id) {
+		detailsRepository.deleteById(id);
+	}
 }

@@ -10,4 +10,6 @@ public interface DetailsService {
 	Employee getEmployeeByid(int id);
 
 	Employee createEmployee(Employee employee);
+
+	void deleteById(int id);
 }

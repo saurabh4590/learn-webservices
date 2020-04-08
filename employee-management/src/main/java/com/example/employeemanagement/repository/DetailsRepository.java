@@ -23,4 +23,17 @@ public class DetailsRepository {
 		entityManager.persist(employee);
 		return employee;
 	}
+
+	public void deleteById(int id) {
+		Employee enployee = getEmployee(id);
+		entityManager.remove(enployee);
+	}
+
+	public Employee updateUser(Employee employee, int id) {
+		Employee tempEmployee = getEmployee(id);
+		System.out.println(tempEmployee.toString());
+		entityManager.merge(tempEmployee);
+		System.out.println(employee.toString());
+		return tempEmployee;
+	}
 }
