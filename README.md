@@ -12,3 +12,4 @@ Features implemented:
 - Field validation. (Commits on Apr 8, 2020)
 - Swagger Documentation. (Commits on Apr 8, 2020)
 - Custom Exception. (Commits on Apr 8, 2020)
+- Actuator for getting the health of the service. (Commits on Apr 8, 2020)
