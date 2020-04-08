@@ -9,3 +9,6 @@ Using this application, I want to implement the below:
 
 Features implemented:
 - @ResponseStatus for responding with a particular HttpStatus code. (Commits on Apr 8, 2020)
+- Field validation. (Commits on Apr 8, 2020)
+- Swagger Documentation. (Commits on Apr 8, 2020)
+- Custom Exception. (Commits on Apr 8, 2020)
