@@ -1,5 +1,7 @@
 package com.example.employeemanagement.controller;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +49,7 @@ public class EmployeeDetailsController {
 	 * @return
 	 */
 	@PostMapping("/details")
-	public ResponseEntity<Employee> getAllEmployees(@RequestBody Employee employee) {
+	public ResponseEntity<Employee> getAllEmployees(@Valid @RequestBody Employee employee) {
 		Employee tempEmployee = detailsService.createEmployee(employee);
 		return new ResponseEntity<Employee>(tempEmployee, HttpStatus.CREATED);
 	}
