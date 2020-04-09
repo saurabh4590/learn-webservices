@@ -15,6 +15,10 @@ Using this application, I want to implement the below:
 - Actuator for getting the health of the service. (Commits on Apr 8, 2020)
 - Static and Dynamic Filtering.
 
+	**Static filtering** filters fixed values and these values are managed in Bean using @JsonIgnore and @JsonIgnoreProperties.
+	
+	**Dynamic filtering** filters using SimpleFilterProvider class as mentioned in FilteringController.
+
 -------------------------------------------------------------------------------------------------------
 Actuator generates below URLs which can be useful for monitoring the application:
 - We need to add below in our code
