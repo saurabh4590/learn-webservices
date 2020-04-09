@@ -10,19 +10,40 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  * @author sourabh-s
  *
  */
-@JsonIgnoreProperties(value = { "field2" })
-public class Somebean {
+
+@JsonIgnoreProperties(value = { "field2" }) // Static filter
+public class StaticFilterSomeBean {
 
 	private String field1;
 	private String field2;
 	@JsonIgnore
 	private String field3;
+	private String field4;
+	private String field5;
 
-	public Somebean(String field1, String field2, String field3) {
+	public StaticFilterSomeBean(String field1, String field2, String field3, String field4, String field5) {
 		super();
 		this.field1 = field1;
 		this.field2 = field2;
 		this.field3 = field3;
+		this.field4 = field4;
+		this.field5 = field5;
+	}
+
+	public String getField4() {
+		return field4;
+	}
+
+	public void setField4(String field4) {
+		this.field4 = field4;
+	}
+
+	public String getField5() {
+		return field5;
+	}
+
+	public void setField5(String field5) {
+		this.field5 = field5;
 	}
 
 	public String getField1() {
